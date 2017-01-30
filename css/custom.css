@@ -1,0 +1,116 @@
+.img-circle {
+    filter: grayscale(1);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px
+}
+html , body {
+    min-height: 100%
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+.list--unstyled {
+    padding: 10px
+}
+li {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+        display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+/*
+footer{
+    position: fixed; margin:0;bottom: 0; height:40pt;width:100%;
+}
+*/
+footer{
+-webkit-box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.75);
+}
+.footer-container{ 
+    display: flex;
+    align-content:center;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.footer-button {
+    margin: auto;
+   /*font-size: 38pt;*/
+   margin: 1pt;
+}
+
+#root{
+    min-height: 100%;    
+}
+
+
+.colWrapper{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35pt;
+}
+.middleExpandable{
+    flex: 1 1 auto;
+    /*overflow-y: auto;*/
+    min-height: 100px;
+}
+.footer{
+    position: fixed;
+    margin:0;
+    bottom: 0;
+    width:100%;
+}
+
+.google-logo{
+    padding-left: 33px;
+    padding-top: 30px;
+    padding-bottom: 4px;
+}
+.media{
+    width: 100%;
+}
+@media (min-width: 700px) { 
+
+ }
+.map-holder{
+    position: fixed;
+    top: 0px;
+    z-index:3;
+    -webkit-box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -2px 15px 0px rgba(0,0,0,0.75);
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.venues-list{
+    padding-top: 200px;
+    z-index:2;
+}
+
+.GMap {
+  height: 100%;
+  width: 100%;
+}
+
+.GMap-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+

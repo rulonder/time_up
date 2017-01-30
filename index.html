@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- manifest="example.appcache" -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta version="1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="description" content="Discover the best place to deliver your stroke patients"/>
+        <title>TimeUp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="#333">
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" href="../images/favicon.ico">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Dependencies -->
+        <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+        <script src="https://unpkg.com/react@15.4.1/dist/react.min.js"></script>
+        <script src="https://unpkg.com/react-dom@15.4.1/dist/react-dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuyLkPoBrIJ7GYV3BELkqwBZ7JtTs2tGo"></script>   
+    </head>
+    <body>
+        <div id='root'></div>
+        <div id='map'></div>
+        <!-- Main -->
+        <script src="./dist/bundle.js"></script>
+        <link rel="stylesheet"  href="./css/timeline.css"/>        
+        <link rel="stylesheet"  href="./css/custom.css"/>
+        <link rel="stylesheet"  href="./css/spinner.css"/>
+        <link rel="stylesheet"  href="./css/furtive.min.css"/>
+    </body>
+</html>

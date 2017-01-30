@@ -1,0 +1,25 @@
+{"hospitals":{
+    "ecc":[
+        {
+            "name":"Gregorio Marañon",
+            "position":{
+                "lng":-3.6690999,
+                "lat":40.4172413
+            },
+            "door2Groin" : 90
+        }
+    ],
+    "necc":[
+        {
+            "name":"Infanta Leonor",
+            "position":{
+                "lng":-3.6205412,
+                "lat":40.3874093
+            },
+             "door2Needle" : 60,
+             "needle2Door" : 15
+        }        
+    ]
+
+}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Time Up",
+  "version":1.0,
+  "icons": [
+    {
+      "src": "images/launcher-icon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#3F3F3F",
+  "background_color": "#3F3F3F",
+  "start_url": "index.html",
+  "display": "standalone"
+  //"orientation": "landscape"
+}

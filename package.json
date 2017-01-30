@@ -1,0 +1,38 @@
+{
+  "name": "timeup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack;",
+    "test": "tsc ;ava dist/**/*.test.js",
+    "clean":"rm -rf public_hosting;mkdir public_hosting",
+    "serve": "npm run clean;npm run build;cp index.html public_hosting/;cp -r dist public_hosting/;cp -r css public_hosting/;cp -r images public_hosting/;cp manifest.json public_hosting/;firebase serve",
+    "deploy": "cp index.html public_hosting/;cp -r dist public_hosting/;cp -r css public_hosting/;cp -r images public_hosting/;cp manifest.json public_hosting/;firebase deploy"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.51",
+    "@types/node": "^7.0.4",
+    "@types/react": "^0.14.54",
+    "@types/react-dom": "^0.14.19",
+    "awesome-typescript-loader": "^3.0.0-beta.10",
+    "firebase": "^3.6.7",
+    "furtive": "^2.3.0",
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.1.1",
+    "source-map-loader": "^0.1.5",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1"
+  }
+}
