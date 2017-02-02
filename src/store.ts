@@ -17,7 +17,7 @@ interface MyWindow extends Window {
 }
 declare var window: MyWindow;
 // Add the dev tools for redux debuging
-const store = createStore<IState>(reducers,{strategies:{values:[]},location:{value:{latitude:0.0,longitude:0.0},status:"ERROR"},loading:false}, 
+const store = createStore<IState>(reducers,{strategies:{values:[]},location:{value:{latitude:0.0,longitude:0.0},status:"ERROR"},loading:{value:false}}, 
   compose(window.devToolsExtension ? window.devToolsExtension() : (f:any) => f))
 
 export {store}

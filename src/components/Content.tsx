@@ -3,7 +3,6 @@ import { Spinner } from './Spinner'
 import {IStrategy} from '../utils/IStrategies'
 import {ILocation} from "../utils/ILocation"
 import {Strategy} from "./Strategy"
-import {VerticalTimeLine} from "./VerticalTimeLine"
 import {Map} from "./Map"
 
 interface IContent{

@@ -7,7 +7,8 @@ test('test strategies update',(t)=>{
         ecc:"Gregorio",
         name:"test hospital",
         probability:0.1,
-        type:"MOTHERSHIP"
+        type:"MOTHERSHIP",
+        steps:[]
     }
     const beforeState= {
         strategies:[],

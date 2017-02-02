@@ -1,24 +1,60 @@
 {"hospitals":{
     "ecc":[
         {
-            "name":"Gregorio Marañon",
+            "name":"La Paz",
             "position":{
-                "lng":-3.6690999,
-                "lat":40.4172413
+                "lng":-3.689587,
+                "lat":40.4811633
             },
             "door2Groin" : 90
         }
     ],
     "necc":[
         {
-            "name":"Infanta Leonor",
+            "name":"Clinico san Carlos",
             "position":{
-                "lng":-3.6205412,
-                "lat":40.3874093
+                "lng":-3.7198249,
+                "lat":40.4403419
             },
              "door2Needle" : 60,
              "needle2Door" : 15
-        }        
+        },
+        {
+            "name":"Gregorio Marañon",
+            "position":{
+                "lng":-3.6690999,
+                "lat":40.4172413
+            },
+             "door2Needle" : 60,
+             "needle2Door" : 15
+        },
+        {
+            "name":"12 de Octubre",
+            "position":{
+                "lng":-3.6985367,
+                "lat":40.37811
+            },
+             "door2Needle" : 60,
+             "needle2Door" : 15
+        } ,
+        {
+            "name":"La princesa",
+            "position":{
+                "lng":-3.6779335,
+                "lat":40.434212
+            },
+             "door2Needle" : 60,
+             "needle2Door" : 15
+        },
+        {
+            "name":"Ramon y Cajal",
+            "position":{
+                "lng":-3.6962648,
+                "lat":40.4878065
+            },
+             "door2Needle" : 60,
+             "needle2Door" : 15
+        }                          
     ]
 
 }

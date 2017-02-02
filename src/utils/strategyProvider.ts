@@ -82,5 +82,6 @@ async function computeStrategies<T extends IDistanceProvider>(ecc : Array < Iecc
     })
     // order strategies
     const result = _.concat<(IDripAndShipStrategy|IMothershipStrategy)>(dripAndShipProbabilities,mothershipProbabilities)
-    return _.sortBy(result,'probablilty',).reverse()
+    const orderedResult = _.sortBy(result,'probability').reverse()
+    return orderedResult
 }

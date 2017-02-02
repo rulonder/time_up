@@ -6,11 +6,12 @@
   "scripts": {
     "build": "webpack;",
     "test": "tsc ;ava dist/**/*.test.js",
-    "clean":"rm -rf public_hosting;mkdir public_hosting",
+    "clean": "rm -rf public_hosting;mkdir public_hosting",
     "serve": "npm run clean;npm run build;cp index.html public_hosting/;cp -r dist public_hosting/;cp -r css public_hosting/;cp -r images public_hosting/;cp manifest.json public_hosting/;firebase serve",
     "deploy": "cp index.html public_hosting/;cp -r dist public_hosting/;cp -r css public_hosting/;cp -r images public_hosting/;cp manifest.json public_hosting/;firebase deploy"
   },
   "dependencies": {
+    "@types/googlemaps": "^3.26.1",
     "@types/lodash": "^4.14.51",
     "@types/node": "^7.0.4",
     "@types/react": "^0.14.54",
@@ -18,6 +19,8 @@
     "awesome-typescript-loader": "^3.0.0-beta.10",
     "firebase": "^3.6.7",
     "furtive": "^2.3.0",
+    "google": "^2.1.0",
+    "googlemaps": "^1.12.0",
     "immutable": "^3.8.1",
     "lodash": "^4.17.4",
     "react": "^15.4.1",
@@ -27,6 +30,7 @@
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.1.1",
     "source-map-loader": "^0.1.5",
+    "tslib": "^1.5.0",
     "typescript": "^2.1.4",
     "webpack": "^1.14.0"
   },

@@ -6,6 +6,8 @@
         "noImplicitAny": true,
         "module": "commonjs",
         "target": "es5",
+        "noEmitHelpers": true,
+        "importHelpers": true,
         "jsx": "react",
         "lib": [
             "dom",

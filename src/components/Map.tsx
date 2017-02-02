@@ -26,7 +26,6 @@ export class Map extends React.Component<IProps, IState> {
   componentDidMount() {
     // create the map, marker and infoWindow after the component has
     // been rendered because we need to manipulate the DOM for Google =(
-    console.log(this.props)
     this.map = this.createMap()
       const marker = this.createMarker(this.props.initialCenter, this.map)
       this.marker = marker
@@ -51,7 +50,7 @@ export class Map extends React.Component<IProps, IState> {
       gestureHandling: 'greedy',
       center: this.mapCenter()
     }
-    return new google.maps.Map(this.refs.mapCanvas, mapOptions)
+    return new google.maps.Map(this.refs.mapCanvas as Element, mapOptions)
   }
 
   cleanMarkers() {
@@ -66,7 +65,7 @@ export class Map extends React.Component<IProps, IState> {
     )
   }
 
-  createMarker(position:ILocation, map) {
+  createMarker(position:ILocation, map:any) {
     const googlePosition = new google.maps.LatLng(
       position.latitude,
       position.longitude
@@ -77,7 +76,7 @@ export class Map extends React.Component<IProps, IState> {
     })
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(nextProps:any, nextState:any) {
     return false
   }
 
