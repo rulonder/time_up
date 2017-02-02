@@ -19,7 +19,7 @@ export const Strategy=(props:Iprop)=>{
                         {strat.name}              
                     </h3>
                     <p className="fnt--mid-gray">
-                        Probaility is {strat.probability.toFixed(2)} 
+                        Probaility is {strat.probability.toFixed(4)} 
                     </p>
                     <VerticalTimeLine records={strat.steps} ></VerticalTimeLine>
                 </div>
