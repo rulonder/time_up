@@ -6,7 +6,11 @@
 }
 
 .timeline ul li::after {
-  content: '';
+  content: "\2022";
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -20,9 +24,11 @@
 .timeline ul li div {
   position: relative;
   bottom: 0;
-  width: 100px;
+  width: 250px;
   padding: 15px;
+  padding-bottom: 0;
   background: #FFF;
+  font-size: 18px;
 }
 
 .timeline ul li div::before {

@@ -15,11 +15,11 @@ export const Strategy=(props:Iprop)=>{
         <li>
             <div className="media" >
                 <div className="media-body brdr--light-gray" style={divStyle}>
-                    <h4 className="m0 p0">
+                    <h3 className="fnt--dark-gray">
                         {strat.name}              
-                    </h4>
-                    <p className="m0 p0">
-                        Probaility is {strat.probability} 
+                    </h3>
+                    <p className="fnt--mid-gray">
+                        Probaility is {strat.probability.toFixed(2)} 
                     </p>
                     <VerticalTimeLine records={strat.steps} ></VerticalTimeLine>
                 </div>
